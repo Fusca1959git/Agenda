@@ -1,0 +1,304 @@
+```css
+/* =================================
+   RESET
+================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eaf8fc,
+            #ffffff
+        );
+
+    color: #17324d;
+}
+
+
+/* =================================
+   PÁGINA
+================================= */
+
+.register-page {
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 20px;
+}
+
+
+/* =================================
+   CARTÃO
+================================= */
+
+.register-card {
+    width: 100%;
+
+    max-width: 500px;
+
+    padding: 40px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 15px 50px rgba(11, 53, 83, 0.12);
+}
+
+
+/* =================================
+   LOGO
+================================= */
+
+.register-logo {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-bottom: 30px;
+
+    color: #0b3553;
+
+    text-decoration: none;
+
+    font-size: 21px;
+
+    font-weight: bold;
+}
+
+.register-logo img {
+    width: 50px;
+
+    height: 50px;
+
+    border-radius: 50%;
+}
+
+
+/* =================================
+   CABEÇALHO
+================================= */
+
+.register-header {
+    margin-bottom: 30px;
+
+    text-align: center;
+}
+
+.register-header h1 {
+    margin-bottom: 10px;
+
+    color: #0b3553;
+
+    font-size: 30px;
+}
+
+.register-header p {
+    color: #728692;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+}
+
+
+/* =================================
+   FORMULÁRIO
+================================= */
+
+.register-form {
+    width: 100%;
+}
+
+.field {
+    margin-bottom: 18px;
+}
+
+.field label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #304b5d;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+.field input {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid #d9e4e9;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    background: #f9fcfd;
+
+    color: #17324d;
+
+    font-size: 15px;
+
+    transition: 0.2s;
+}
+
+.field input::placeholder {
+    color: #9aaab3;
+}
+
+.field input:focus {
+    border-color: #0787b5;
+
+    background: white;
+
+    box-shadow:
+        0 0 0 3px rgba(7, 135, 181, 0.12);
+}
+
+
+/* =================================
+   DUAS COLUNAS
+================================= */
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+
+/* =================================
+   BOTÃO
+================================= */
+
+.register-form button {
+    width: 100%;
+
+    margin-top: 8px;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #0787b5;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.register-form button:hover {
+    background: #056f96;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 18px rgba(7, 135, 181, 0.2);
+}
+
+.register-form button:active {
+    transform: translateY(0);
+}
+
+
+/* =================================
+   LINK LOGIN
+================================= */
+
+.login-link {
+    margin-top: 25px;
+
+    color: #728692;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #0787b5;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+
+/* =================================
+   RESPONSIVIDADE
+================================= */
+
+@media (max-width: 600px) {
+
+    .register-page {
+        padding: 25px 15px;
+    }
+
+    .register-card {
+        padding: 30px 22px;
+
+        border-radius: 14px;
+    }
+
+    .register-header h1 {
+        font-size: 26px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+
+        gap: 0;
+    }
+}
+
+
+@media (max-width: 380px) {
+
+    .register-card {
+        padding: 25px 18px;
+    }
+
+    .register-header h1 {
+        font-size: 23px;
+    }
+
+    .register-header p {
+        font-size: 14px;
+    }
+}

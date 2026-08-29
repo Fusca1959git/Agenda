@@ -10,6 +10,7 @@ body {
 header {
     padding: 30px;
     background-color: rgb(11, 53, 83);
+    margin: 0;
 }
 
 img {
