@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    ;
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(90deg, rgba(0, 0, 255, 0), rgba(6, 191, 235));
@@ -20,7 +19,8 @@ img {
 #nome {
     width: 200px;
     height: 100px;
-    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 a {
     margin-top: -20px;
@@ -60,7 +60,7 @@ h2 {
     gap: 20px;
     overflow-x: auto;
     padding: 20px 5px;
-    margin-bottom: auto;
+    margin-top: 17%;
 }
 .servico {
     padding: 1px;
