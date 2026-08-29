@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    ;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(90deg, rgba(0, 0, 255, 0), rgba(6, 191, 235));
+}
+header {
+    margin: 0;
+    padding: 30px;
+    background-color: rgb(11, 53, 83)
+}
+img {
+    width: 60px;
+    height: 60px;
+    border-radius: 55%;
+    float: left;
+    margin-top: -32px;
+}
+#nome {
+    width: 200px;
+    height: 100px;
+    margin: 0;
+}
+a {
+    margin-top: -20px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin-right: 20px;
+    border: 0px solid;
+    border-radius: 5px;
+    border-color: rgba(172, 57, 144)
+}
+#log-stl {
+    top: 0;
+    margin: 2;
+    float: right;
+    background-color: rgba(172, 57, 144, 0.6);
+    transition: all 0.3s ease;
+}
+#log-stl:hover {
+    background-color: rgba(172, 57, 144);
+    color: white;
+    transform: scale(1.05);
+}
+.menu-btn {
+    scale: 1.5;
+    margin: 0;
+    margin-top: -23px;
+    float: right;
+    margin-right: -10px;
+}
+h2 {
+    text-align: center;
+    margin-top: 8.5%;
+}
+.Servicos {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px 5px;
+    margin-bottom: auto;
+}
+.servico {
+    padding: 1px;
+    width: 100%;
+    margin: 0;
+    background-color: rgba(11, 53, 83, 0.8);
+    color: white;
+    text-align: center;
+    width: 280px;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+.servico:hover {
+    background-color: rgba(172, 57, 144, 0.8);
+    color: white;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+
+}
