@@ -1,6 +1,9 @@
-const agendar = document.querySelector('.menu-btn');
-agendar.addEventListener('click', () => {
+const btnAgendar = document.querySelector('.menu-btn');
+btnAgendar.addEventListener('click', () => {
     console.log("Agendamento iniciado");});
-    const agendar = document.querySelector('.btn-agendar');
-agendar.addEventListener('click', () => {
+
+    const btnAgendar2 = document.querySelector('.btn-agendar');
+btnAgendar2.addEventListener('click', () => {
     console.log("Agendamento iniciado");});
+
+    const servico = ""

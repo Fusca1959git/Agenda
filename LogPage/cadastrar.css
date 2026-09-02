@@ -1,26 +1,58 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
+    margin: 0;
+    height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
+    background: linear-gradient(270deg, rgba(0, 0, 255, 0), rgba(6, 191, 235, 0.1));
 }
-
 header {
-    padding: 30px;
-    background-color: rgb(11, 53, 83);
-    margin: 0;
+    padding: 0.8%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
-
 img {
     width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    float: left;
-    margin-top: -32px;
+    height: auto;
+    border-radius: 55%;
 }
-
+.logo{  
+    margin-left: 20px;
+    width: 60px;
+    height: auto;
+    border-radius: 55%;
+}
+.nome {
+    scale: 1.5;
+    width: 130px;
+    height: auto;
+}
+.navegar{
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    left: 30%;
+}   
+.navegar a{
+    text-decoration: none;
+    color: gray;
+    font-size: 13px;
+    justify-content: center;
+    transition: all 0.3s;
+}
+.navegar a:hover{
+    text-decoration: underline;
+    color: rgba(11, 53, 83, 0.8);
+}
+.menu-btn {
+    display: none;
+    scale: 1.5;
+    margin: 0;
+    margin-top: -23px;
+    float: right;
+    margin-right: -10px;
+}
 main {
     min-height: 100vh;
     display: flex;
@@ -30,9 +62,8 @@ main {
         180deg,
         rgba(0, 0, 255, 0),
         rgb(6, 191, 235)
-    );
+    )
 }
-
 #tela-cadastro {
     background-color: rgb(11, 53, 83);
     display: flex;
