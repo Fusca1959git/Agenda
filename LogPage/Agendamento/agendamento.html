@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">	
 
     <link rel="stylesheet" href="agendamento.css">
-    <link rel="icon" href="../../ Logo.png">
-
+    <link rel="icon" href="../../Logo.png">
     <title>Clínica | Mãe</title>	
 </head>	
 
@@ -31,7 +30,56 @@
     </header>	
      
     <main>
-        
+        <section class="agendamento">
+            <h1>Agendamento de Consultas</h1>
+            <p>Preencha o formulário abaixo para agendar sua consulta na Clínica Mãe.</p>
+
+            <form action="processar_agendamento.php" method="POST">
+                <label for="servico">Serviço:</label>
+                <select name="servico" required>
+                    <option>Cardiologista</option>
+                    <option>Dermatologista</option>
+                    <option>Ginecologista</option>
+                    <option>Pediatra</option>
+                    <option>Ortopedista</option>
+                    <option>Endocrinologista</option>
+                    <option>Gastroenterologista</option>
+                </select>
+
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" name="telefone" required>
+
+                <label for="data">Data da Consulta:</label>
+                <input type="date" name="data" required>
+
+                <label for="hora">Hora da Consulta:</label>
+                <input type="time" name="hora" required>
+
+                <button type="submit">Agendar</button>
+            </form>
+
+        </section>
+
+        <section class="calendario">
+            <h2>Calendário de Consultas</h2>
+            <p>Abaixo você pode visualizar as datas e horários disponíveis para agendamento.</p>
+        <div class="calendario">
+            <ul style="display: grid; grid-template-columns: repeat(7, 1fr) grid-gap: 10px;">
+                <li>DOM</li>
+                <li>SEG</li>
+                <li>TER</li>
+                <li>QUA</li>
+                <li>QUI</li>
+                <li>SEX</li>
+                <li>SÁB</li>
+            </ul>
+        </section>
     </main>
 
     <footer>

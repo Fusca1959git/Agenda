@@ -50,6 +50,14 @@ header {
     float: right;
     margin-right: -10px;
 }
+.agendamento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+}
 footer{
     background-color: rgba(11, 53, 83, 0.9);
     color: white;
